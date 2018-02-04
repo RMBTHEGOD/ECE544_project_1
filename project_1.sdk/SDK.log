@@ -4705,3 +4705,10 @@ org.eclipse.core.internal.resources.ResourceException: Workspace was not properl
 		 G:\ESD\Project_1_release\ip_repo
 06:37:28 INFO  : Successfully done setting SDK workspace  
 06:37:33 INFO  : Registering command handlers for SDK TCF services
+08:17:59 INFO  : Registering command handlers for SDK TCF services
+08:18:00 INFO  : Launching XSCT server: xsct.bat -interactive G:\ECE544\project_1\project_1.sdk\temp_xsdb_launch_script.tcl
+08:18:03 INFO  : XSCT server has started successfully.
+08:18:06 INFO  : Successfully done setting XSCT server connection channel  
+08:18:06 INFO  : Restoring global repository preferences: 
+		 G:\ESD\Project_1_release\ip_repo
+08:18:06 INFO  : Successfully done setting SDK workspace  
