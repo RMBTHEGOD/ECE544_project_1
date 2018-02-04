@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>n4fpga_hw_platform_7</name>
+	<comment>Created by SDK v2017.3</comment>
+	<projects>
+		<project>n4fpga_hw_platform_8</project>
+	</projects>
+	<buildSpec>
+	</buildSpec>
+	<natures>
+	</natures>
+	<filteredResources>
+		<filter>
+			<id>1517301050985</id>
+			<name></name>
+			<type>6</type>
+			<matcher>
+				<id>org.eclipse.ui.ide.multiFilter</id>
+				<arguments>1.0-name-matches-false-false-*.xml</arguments>
+			</matcher>
+		</filter>
+		<filter>
+			<id>1517301051241</id>
+			<name></name>
+			<type>6</type>
+			<matcher>
+				<id>org.eclipse.ui.ide.multiFilter</id>
+				<arguments>1.0-name-matches-false-false-*.svd</arguments>
+			</matcher>
+		</filter>
+		<filter>
+			<id>1517301051271</id>
+			<name></name>
+			<type>6</type>
+			<matcher>
+				<id>org.eclipse.ui.ide.multiFilter</id>
+				<arguments>1.0-name-matches-false-false-*.hwh</arguments>
+			</matcher>
+		</filter>
+	</filteredResources>
+</projectDescription>

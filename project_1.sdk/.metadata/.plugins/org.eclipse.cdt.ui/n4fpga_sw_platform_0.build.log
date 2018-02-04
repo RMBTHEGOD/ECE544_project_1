@@ -1,34 +1,6 @@
-22:58:06 **** Auto Build of configuration Debug for project n4fpga_sw_platform_0 ****
+21:00:37 **** Incremental Build of configuration Debug for project n4fpga_sw_platform_0 ****
 make all 
-Building file: ../ece544_IP_Test.c
-Invoking: MicroBlaze gcc compiler
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"ece544_IP_Test.o" -I../../standalone_bsp_1/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"ece544_IP_Test.d" -MT"ece544_IP_Test.o" -o "ece544_IP_Test.o" "../ece544_IP_Test.c"
-In file included from ../ece544_IP_Test.c:54:0:
-../../standalone_bsp_1/microblaze_0/include/pmodOLEDrgb.h:57:0: warning: "bool" redefined
- #define bool u8
- 
-In file included from ../../standalone_bsp_1/microblaze_0/include/nexys4IO.h:29:0,
-                 from ../ece544_IP_Test.c:53:
-c:\xilinx\sdk\2017.3\gnu\microblaze\nt\lib\gcc\microblaze-xilinx-elf\6.2.0\include\stdbool.h:33:0: note: this is the location of the previous definition
- #define bool _Bool
- 
-../ece544_IP_Test.c: In function 'RunTest4':
-../ece544_IP_Test.c:398:11: warning: unused variable 'sw' [-Wunused-variable]
-  uint16_t sw;
-           ^~
-Finished building: ../ece544_IP_Test.c
- 
-Building target: n4fpga_sw_platform_0.elf
-Invoking: MicroBlaze gcc linker
-mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_1/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "n4fpga_sw_platform_0.elf"  ./ece544_IP_Test.o ./platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-Finished building target: n4fpga_sw_platform_0.elf
- 
-Invoking: MicroBlaze Print Size
-mb-size n4fpga_sw_platform_0.elf  |tee "n4fpga_sw_platform_0.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  44500	    432	   3780	  48712	   be48	n4fpga_sw_platform_0.elf
-Finished building: n4fpga_sw_platform_0.elf.size
- 
+make: Nothing to be done for `all'.
 
-22:58:08 Build Finished (took 1s.714ms)
+21:00:37 Build Finished (took 150ms)
 

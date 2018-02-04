@@ -1,7 +1,7 @@
 --Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2017.3 (win64) Build 2018833 Wed Oct  4 19:58:22 MDT 2017
---Date        : Wed Jan 24 20:46:32 2018
+--Date        : Tue Jan 30 10:58:25 2018
 --Host        : LAPTOP-C1T6PIG6 running 64-bit major release  (build 9200)
 --Command     : generate_target embsys.bd
 --Design      : embsys
@@ -3890,15 +3890,16 @@ entity embsys is
     btnL_0 : in STD_LOGIC;
     btnR_0 : in STD_LOGIC;
     btnU_0 : in STD_LOGIC;
+    colour_clock : out STD_LOGIC;
     dp_0 : out STD_LOGIC;
     gpio_0_GPIO2_tri_o : out STD_LOGIC_VECTOR ( 7 downto 0 );
     gpio_0_GPIO_tri_i : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    gpio_0_blue_high_tri_i : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    gpio_0_blue_low_tri_i : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    gpio_0_green_high_tri_i : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    gpio_0_green_low_tri_i : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    gpio_0_red_high_tri_i : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    gpio_0_red_low_tri_i : in STD_LOGIC_VECTOR ( 7 downto 0 );
+    gpio_0_blue_high_tri_i : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    gpio_0_blue_low_tri_i : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    gpio_0_green_high_tri_i : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    gpio_0_green_low_tri_i : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    gpio_0_red_high_tri_i : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    gpio_0_red_low_tri_i : in STD_LOGIC_VECTOR ( 31 downto 0 );
     led_0 : out STD_LOGIC_VECTOR ( 15 downto 0 );
     pmodENC_A_0 : in STD_LOGIC;
     pmodENC_B_0 : in STD_LOGIC;
@@ -4258,7 +4259,8 @@ architecture STRUCTURE of embsys is
     clk_in1 : in STD_LOGIC;
     clk_out1 : out STD_LOGIC;
     clk_out2 : out STD_LOGIC;
-    locked : out STD_LOGIC
+    locked : out STD_LOGIC;
+    clk_out3 : out STD_LOGIC
   );
   end component embsys_clk_wiz_1_0;
   component embsys_rst_clk_wiz_1_100M_0 is
@@ -4296,8 +4298,8 @@ architecture STRUCTURE of embsys is
     s_axi_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
     s_axi_rvalid : out STD_LOGIC;
     s_axi_rready : in STD_LOGIC;
-    gpio_io_i : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    gpio2_io_i : in STD_LOGIC_VECTOR ( 7 downto 0 )
+    gpio_io_i : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    gpio2_io_i : in STD_LOGIC_VECTOR ( 31 downto 0 )
   );
   end component embsys_axi_gpio_1_0;
   component embsys_axi_gpio_2_0 is
@@ -4321,8 +4323,8 @@ architecture STRUCTURE of embsys is
     s_axi_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
     s_axi_rvalid : out STD_LOGIC;
     s_axi_rready : in STD_LOGIC;
-    gpio_io_i : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    gpio2_io_i : in STD_LOGIC_VECTOR ( 7 downto 0 )
+    gpio_io_i : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    gpio2_io_i : in STD_LOGIC_VECTOR ( 31 downto 0 )
   );
   end component embsys_axi_gpio_2_0;
   component embsys_axi_gpio_3_0 is
@@ -4346,8 +4348,8 @@ architecture STRUCTURE of embsys is
     s_axi_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
     s_axi_rvalid : out STD_LOGIC;
     s_axi_rready : in STD_LOGIC;
-    gpio_io_i : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    gpio2_io_i : in STD_LOGIC_VECTOR ( 7 downto 0 )
+    gpio_io_i : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    gpio2_io_i : in STD_LOGIC_VECTOR ( 31 downto 0 )
   );
   end component embsys_axi_gpio_3_0;
   signal PmodOLEDrgb_0_PmodOLEDrgb_out_PIN10_I : STD_LOGIC;
@@ -4376,12 +4378,12 @@ architecture STRUCTURE of embsys is
   signal PmodOLEDrgb_0_PmodOLEDrgb_out_PIN9_T : STD_LOGIC;
   signal axi_gpio_0_GPIO2_TRI_O : STD_LOGIC_VECTOR ( 7 downto 0 );
   signal axi_gpio_0_GPIO_TRI_I : STD_LOGIC_VECTOR ( 7 downto 0 );
-  signal axi_gpio_1_GPIO2_TRI_I : STD_LOGIC_VECTOR ( 7 downto 0 );
-  signal axi_gpio_1_GPIO_TRI_I : STD_LOGIC_VECTOR ( 7 downto 0 );
-  signal axi_gpio_2_GPIO2_TRI_I : STD_LOGIC_VECTOR ( 7 downto 0 );
-  signal axi_gpio_2_GPIO_TRI_I : STD_LOGIC_VECTOR ( 7 downto 0 );
-  signal axi_gpio_3_GPIO2_TRI_I : STD_LOGIC_VECTOR ( 7 downto 0 );
-  signal axi_gpio_3_GPIO_TRI_I : STD_LOGIC_VECTOR ( 7 downto 0 );
+  signal axi_gpio_1_GPIO2_TRI_I : STD_LOGIC_VECTOR ( 31 downto 0 );
+  signal axi_gpio_1_GPIO_TRI_I : STD_LOGIC_VECTOR ( 31 downto 0 );
+  signal axi_gpio_2_GPIO2_TRI_I : STD_LOGIC_VECTOR ( 31 downto 0 );
+  signal axi_gpio_2_GPIO_TRI_I : STD_LOGIC_VECTOR ( 31 downto 0 );
+  signal axi_gpio_3_GPIO2_TRI_I : STD_LOGIC_VECTOR ( 31 downto 0 );
+  signal axi_gpio_3_GPIO_TRI_I : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal axi_timer_0_generateout0 : STD_LOGIC;
   signal axi_timer_0_interrupt : STD_LOGIC;
   signal axi_uartlite_0_UART_RxD : STD_LOGIC;
@@ -4393,6 +4395,7 @@ architecture STRUCTURE of embsys is
   signal btnU_0_1 : STD_LOGIC;
   signal clk_in1_0_1 : STD_LOGIC;
   signal clk_wiz_1_clk_out2 : STD_LOGIC;
+  signal clk_wiz_1_clk_out3 : STD_LOGIC;
   signal clk_wiz_1_locked : STD_LOGIC;
   signal ext_reset_in_0_1 : STD_LOGIC;
   signal fit_timer_0_Interrupt : STD_LOGIC;
@@ -4707,8 +4710,10 @@ architecture STRUCTURE of embsys is
   attribute X_INTERFACE_INFO of PmodOLEDrgb_out_0_pin9_i : signal is "digilentinc.com:interface:pmod:1.0 PmodOLEDrgb_out_0 PIN9_I";
   attribute X_INTERFACE_INFO of PmodOLEDrgb_out_0_pin9_o : signal is "digilentinc.com:interface:pmod:1.0 PmodOLEDrgb_out_0 PIN9_O";
   attribute X_INTERFACE_INFO of PmodOLEDrgb_out_0_pin9_t : signal is "digilentinc.com:interface:pmod:1.0 PmodOLEDrgb_out_0 PIN9_T";
-  attribute X_INTERFACE_INFO of sysclk : signal is "xilinx.com:signal:clock:1.0 CLK.SYSCLK CLK";
+  attribute X_INTERFACE_INFO of colour_clock : signal is "xilinx.com:signal:clock:1.0 CLK.COLOUR_CLOCK CLK";
   attribute X_INTERFACE_PARAMETER : string;
+  attribute X_INTERFACE_PARAMETER of colour_clock : signal is "XIL_INTERFACENAME CLK.COLOUR_CLOCK, CLK_DOMAIN /clk_wiz_1_clk_out1, FREQ_HZ 5468750, PHASE 0.0";
+  attribute X_INTERFACE_INFO of sysclk : signal is "xilinx.com:signal:clock:1.0 CLK.SYSCLK CLK";
   attribute X_INTERFACE_PARAMETER of sysclk : signal is "XIL_INTERFACENAME CLK.SYSCLK, CLK_DOMAIN embsys_clk_in1_0, FREQ_HZ 100000000, PHASE 0.000";
   attribute X_INTERFACE_INFO of sysreset_n : signal is "xilinx.com:signal:reset:1.0 RST.SYSRESET_N RST";
   attribute X_INTERFACE_PARAMETER of sysreset_n : signal is "XIL_INTERFACENAME RST.SYSRESET_N, POLARITY ACTIVE_LOW";
@@ -4755,12 +4760,12 @@ begin
   RGB2_Red_0 <= nexys4IO_0_RGB2_Red;
   an_0(7 downto 0) <= nexys4IO_0_an(7 downto 0);
   axi_gpio_0_GPIO_TRI_I(7 downto 0) <= gpio_0_GPIO_tri_i(7 downto 0);
-  axi_gpio_1_GPIO2_TRI_I(7 downto 0) <= gpio_0_red_low_tri_i(7 downto 0);
-  axi_gpio_1_GPIO_TRI_I(7 downto 0) <= gpio_0_red_high_tri_i(7 downto 0);
-  axi_gpio_2_GPIO2_TRI_I(7 downto 0) <= gpio_0_blue_low_tri_i(7 downto 0);
-  axi_gpio_2_GPIO_TRI_I(7 downto 0) <= gpio_0_blue_high_tri_i(7 downto 0);
-  axi_gpio_3_GPIO2_TRI_I(7 downto 0) <= gpio_0_green_low_tri_i(7 downto 0);
-  axi_gpio_3_GPIO_TRI_I(7 downto 0) <= gpio_0_green_high_tri_i(7 downto 0);
+  axi_gpio_1_GPIO2_TRI_I(31 downto 0) <= gpio_0_red_low_tri_i(31 downto 0);
+  axi_gpio_1_GPIO_TRI_I(31 downto 0) <= gpio_0_red_high_tri_i(31 downto 0);
+  axi_gpio_2_GPIO2_TRI_I(31 downto 0) <= gpio_0_blue_low_tri_i(31 downto 0);
+  axi_gpio_2_GPIO_TRI_I(31 downto 0) <= gpio_0_blue_high_tri_i(31 downto 0);
+  axi_gpio_3_GPIO2_TRI_I(31 downto 0) <= gpio_0_green_low_tri_i(31 downto 0);
+  axi_gpio_3_GPIO_TRI_I(31 downto 0) <= gpio_0_green_high_tri_i(31 downto 0);
   axi_uartlite_0_UART_RxD <= uart_rtl_0_rxd;
   btnC_0_1 <= btnC_0;
   btnD_0_1 <= btnD_0;
@@ -4768,6 +4773,7 @@ begin
   btnR_0_1 <= btnR_0;
   btnU_0_1 <= btnU_0;
   clk_in1_0_1 <= sysclk;
+  colour_clock <= clk_wiz_1_clk_out3;
   dp_0 <= nexys4IO_0_dp;
   ext_reset_in_0_1 <= sysreset_n;
   gpio_0_GPIO2_tri_o(7 downto 0) <= axi_gpio_0_GPIO2_TRI_O(7 downto 0);
@@ -4902,8 +4908,8 @@ axi_gpio_0: component embsys_axi_gpio_0_0
     );
 axi_gpio_1: component embsys_axi_gpio_1_0
      port map (
-      gpio2_io_i(7 downto 0) => axi_gpio_1_GPIO2_TRI_I(7 downto 0),
-      gpio_io_i(7 downto 0) => axi_gpio_1_GPIO_TRI_I(7 downto 0),
+      gpio2_io_i(31 downto 0) => axi_gpio_1_GPIO2_TRI_I(31 downto 0),
+      gpio_io_i(31 downto 0) => axi_gpio_1_GPIO_TRI_I(31 downto 0),
       s_axi_aclk => microblaze_0_Clk,
       s_axi_araddr(8 downto 0) => microblaze_0_axi_periph_M08_AXI_ARADDR(8 downto 0),
       s_axi_aresetn => rst_clk_wiz_1_100M_peripheral_aresetn(0),
@@ -4926,8 +4932,8 @@ axi_gpio_1: component embsys_axi_gpio_1_0
     );
 axi_gpio_2: component embsys_axi_gpio_2_0
      port map (
-      gpio2_io_i(7 downto 0) => axi_gpio_2_GPIO2_TRI_I(7 downto 0),
-      gpio_io_i(7 downto 0) => axi_gpio_2_GPIO_TRI_I(7 downto 0),
+      gpio2_io_i(31 downto 0) => axi_gpio_2_GPIO2_TRI_I(31 downto 0),
+      gpio_io_i(31 downto 0) => axi_gpio_2_GPIO_TRI_I(31 downto 0),
       s_axi_aclk => microblaze_0_Clk,
       s_axi_araddr(8 downto 0) => microblaze_0_axi_periph_M10_AXI_ARADDR(8 downto 0),
       s_axi_aresetn => rst_clk_wiz_1_100M_peripheral_aresetn(0),
@@ -4950,8 +4956,8 @@ axi_gpio_2: component embsys_axi_gpio_2_0
     );
 axi_gpio_3: component embsys_axi_gpio_3_0
      port map (
-      gpio2_io_i(7 downto 0) => axi_gpio_3_GPIO2_TRI_I(7 downto 0),
-      gpio_io_i(7 downto 0) => axi_gpio_3_GPIO_TRI_I(7 downto 0),
+      gpio2_io_i(31 downto 0) => axi_gpio_3_GPIO2_TRI_I(31 downto 0),
+      gpio_io_i(31 downto 0) => axi_gpio_3_GPIO_TRI_I(31 downto 0),
       s_axi_aclk => microblaze_0_Clk,
       s_axi_araddr(8 downto 0) => microblaze_0_axi_periph_M11_AXI_ARADDR(8 downto 0),
       s_axi_aresetn => rst_clk_wiz_1_100M_peripheral_aresetn(0),
@@ -5031,6 +5037,7 @@ clk_wiz_1: component embsys_clk_wiz_1_0
       clk_in1 => clk_in1_0_1,
       clk_out1 => microblaze_0_Clk,
       clk_out2 => clk_wiz_1_clk_out2,
+      clk_out3 => clk_wiz_1_clk_out3,
       locked => clk_wiz_1_locked
     );
 fit_timer_0: component embsys_fit_timer_0_0

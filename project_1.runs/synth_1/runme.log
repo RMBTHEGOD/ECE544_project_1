@@ -14,43 +14,44 @@ INFO: [IP_Flow 19-1700] Loaded user IP repository 'g:/ECE544/ip_repo_544_p1'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.3/data/ip'.
 WARNING: [IP_Flow 19-3664] IP 'embsys_axi_gpio_2_0' generated file not found 'g:/ECE544/project_1/project_1.srcs/sources_1/bd/embsys/ip/embsys_axi_gpio_2_0/stats.txt'. Please regenerate to continue.
 WARNING: [IP_Flow 19-3664] IP 'embsys_axi_gpio_3_0' generated file not found 'g:/ECE544/project_1/project_1.srcs/sources_1/bd/embsys/ip/embsys_axi_gpio_3_0/stats.txt'. Please regenerate to continue.
+add_files: Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 288.254 ; gain = 55.531
 Command: synth_design -top n4fpga -part xc7a100tcsg324-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 8084 
+INFO: Helper process launched with PID 1188 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 399.359 ; gain = 104.754
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 399.719 ; gain = 104.578
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'n4fpga' [G:/ESD/Project_1_release/hardware/n4fpga.v:19]
-INFO: [Synth 8-638] synthesizing module 'embsys' [G:/ECE544/project_1/project_1.srcs/sources_1/bd/embsys/synth/embsys.vhd:3920]
-INFO: [Synth 8-3491] module 'embsys_PmodENC_0_0' declared at 'G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/realtime/embsys_PmodENC_0_0_stub.vhdl:5' bound to instance 'PmodENC_0' of component 'embsys_PmodENC_0_0' [G:/ECE544/project_1/project_1.srcs/sources_1/bd/embsys/synth/embsys.vhd:4782]
-INFO: [Synth 8-638] synthesizing module 'embsys_PmodENC_0_0' [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/realtime/embsys_PmodENC_0_0_stub.vhdl:36]
-INFO: [Synth 8-3491] module 'embsys_PmodOLEDrgb_0_0' declared at 'G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/realtime/embsys_PmodOLEDrgb_0_0_stub.vhdl:5' bound to instance 'PmodOLEDrgb_0' of component 'embsys_PmodOLEDrgb_0_0' [G:/ECE544/project_1/project_1.srcs/sources_1/bd/embsys/synth/embsys.vhd:4810]
-INFO: [Synth 8-638] synthesizing module 'embsys_PmodOLEDrgb_0_0' [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/realtime/embsys_PmodOLEDrgb_0_0_stub.vhdl:77]
-INFO: [Synth 8-3491] module 'embsys_axi_gpio_0_0' declared at 'G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/realtime/embsys_axi_gpio_0_0_stub.vhdl:5' bound to instance 'axi_gpio_0' of component 'embsys_axi_gpio_0_0' [G:/ECE544/project_1/project_1.srcs/sources_1/bd/embsys/synth/embsys.vhd:4879]
-INFO: [Synth 8-638] synthesizing module 'embsys_axi_gpio_0_0' [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/realtime/embsys_axi_gpio_0_0_stub.vhdl:32]
-INFO: [Synth 8-3491] module 'embsys_axi_gpio_1_0' declared at 'G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/realtime/embsys_axi_gpio_1_0_stub.vhdl:5' bound to instance 'axi_gpio_1' of component 'embsys_axi_gpio_1_0' [G:/ECE544/project_1/project_1.srcs/sources_1/bd/embsys/synth/embsys.vhd:4903]
-INFO: [Synth 8-638] synthesizing module 'embsys_axi_gpio_1_0' [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/realtime/embsys_axi_gpio_1_0_stub.vhdl:32]
-INFO: [Synth 8-3491] module 'embsys_axi_gpio_2_0' declared at 'G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/realtime/embsys_axi_gpio_2_0_stub.vhdl:5' bound to instance 'axi_gpio_2' of component 'embsys_axi_gpio_2_0' [G:/ECE544/project_1/project_1.srcs/sources_1/bd/embsys/synth/embsys.vhd:4927]
-INFO: [Synth 8-638] synthesizing module 'embsys_axi_gpio_2_0' [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/realtime/embsys_axi_gpio_2_0_stub.vhdl:32]
-INFO: [Synth 8-3491] module 'embsys_axi_gpio_3_0' declared at 'G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/realtime/embsys_axi_gpio_3_0_stub.vhdl:5' bound to instance 'axi_gpio_3' of component 'embsys_axi_gpio_3_0' [G:/ECE544/project_1/project_1.srcs/sources_1/bd/embsys/synth/embsys.vhd:4951]
-INFO: [Synth 8-638] synthesizing module 'embsys_axi_gpio_3_0' [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/realtime/embsys_axi_gpio_3_0_stub.vhdl:32]
-INFO: [Synth 8-3491] module 'embsys_axi_timer_0_0' declared at 'G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/realtime/embsys_axi_timer_0_0_stub.vhdl:5' bound to instance 'axi_timer_0' of component 'embsys_axi_timer_0_0' [G:/ECE544/project_1/project_1.srcs/sources_1/bd/embsys/synth/embsys.vhd:4975]
-INFO: [Synth 8-638] synthesizing module 'embsys_axi_timer_0_0' [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/realtime/embsys_axi_timer_0_0_stub.vhdl:37]
-INFO: [Synth 8-3491] module 'embsys_axi_uartlite_0_0' declared at 'G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/realtime/embsys_axi_uartlite_0_0_stub.vhdl:5' bound to instance 'axi_uartlite_0' of component 'embsys_axi_uartlite_0_0' [G:/ECE544/project_1/project_1.srcs/sources_1/bd/embsys/synth/embsys.vhd:5004]
-INFO: [Synth 8-638] synthesizing module 'embsys_axi_uartlite_0_0' [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/realtime/embsys_axi_uartlite_0_0_stub.vhdl:33]
-INFO: [Synth 8-3491] module 'embsys_clk_wiz_1_0' declared at 'G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/realtime/embsys_clk_wiz_1_0_stub.vhdl:5' bound to instance 'clk_wiz_1' of component 'embsys_clk_wiz_1_0' [G:/ECE544/project_1/project_1.srcs/sources_1/bd/embsys/synth/embsys.vhd:5029]
-INFO: [Synth 8-638] synthesizing module 'embsys_clk_wiz_1_0' [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/realtime/embsys_clk_wiz_1_0_stub.vhdl:15]
-INFO: [Synth 8-3491] module 'embsys_fit_timer_0_0' declared at 'G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/realtime/embsys_fit_timer_0_0_stub.vhdl:5' bound to instance 'fit_timer_0' of component 'embsys_fit_timer_0_0' [G:/ECE544/project_1/project_1.srcs/sources_1/bd/embsys/synth/embsys.vhd:5036]
-INFO: [Synth 8-638] synthesizing module 'embsys_fit_timer_0_0' [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/realtime/embsys_fit_timer_0_0_stub.vhdl:14]
-INFO: [Synth 8-3491] module 'embsys_mdm_1_0' declared at 'G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/realtime/embsys_mdm_1_0_stub.vhdl:5' bound to instance 'mdm_1' of component 'embsys_mdm_1_0' [G:/ECE544/project_1/project_1.srcs/sources_1/bd/embsys/synth/embsys.vhd:5042]
-INFO: [Synth 8-638] synthesizing module 'embsys_mdm_1_0' [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/realtime/embsys_mdm_1_0_stub.vhdl:21]
-INFO: [Synth 8-3491] module 'embsys_microblaze_0_0' declared at 'G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/realtime/embsys_microblaze_0_0_stub.vhdl:5' bound to instance 'microblaze_0' of component 'embsys_microblaze_0_0' [G:/ECE544/project_1/project_1.srcs/sources_1/bd/embsys/synth/embsys.vhd:5055]
-INFO: [Synth 8-638] synthesizing module 'embsys_microblaze_0_0' [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/realtime/embsys_microblaze_0_0_stub.vhdl:63]
-INFO: [Synth 8-3491] module 'embsys_microblaze_0_axi_intc_0' declared at 'G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/realtime/embsys_microblaze_0_axi_intc_0_stub.vhdl:5' bound to instance 'microblaze_0_axi_intc' of component 'embsys_microblaze_0_axi_intc_0' [G:/ECE544/project_1/project_1.srcs/sources_1/bd/embsys/synth/embsys.vhd:5141]
-INFO: [Synth 8-638] synthesizing module 'embsys_microblaze_0_axi_intc_0' [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/realtime/embsys_microblaze_0_axi_intc_0_stub.vhdl:36]
+INFO: [Synth 8-638] synthesizing module 'n4fpga' [G:/ECE544/project_1/project_1.srcs/sources_1/imports/Desktop/n4fpga.sv:20]
+INFO: [Synth 8-638] synthesizing module 'embsys' [G:/ECE544/project_1/project_1.srcs/sources_1/bd/embsys/synth/embsys.vhd:3921]
+INFO: [Synth 8-3491] module 'embsys_PmodENC_0_0' declared at 'G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/realtime/embsys_PmodENC_0_0_stub.vhdl:5' bound to instance 'PmodENC_0' of component 'embsys_PmodENC_0_0' [G:/ECE544/project_1/project_1.srcs/sources_1/bd/embsys/synth/embsys.vhd:4788]
+INFO: [Synth 8-638] synthesizing module 'embsys_PmodENC_0_0' [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/realtime/embsys_PmodENC_0_0_stub.vhdl:36]
+INFO: [Synth 8-3491] module 'embsys_PmodOLEDrgb_0_0' declared at 'G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/realtime/embsys_PmodOLEDrgb_0_0_stub.vhdl:5' bound to instance 'PmodOLEDrgb_0' of component 'embsys_PmodOLEDrgb_0_0' [G:/ECE544/project_1/project_1.srcs/sources_1/bd/embsys/synth/embsys.vhd:4816]
+INFO: [Synth 8-638] synthesizing module 'embsys_PmodOLEDrgb_0_0' [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/realtime/embsys_PmodOLEDrgb_0_0_stub.vhdl:77]
+INFO: [Synth 8-3491] module 'embsys_axi_gpio_0_0' declared at 'G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/realtime/embsys_axi_gpio_0_0_stub.vhdl:5' bound to instance 'axi_gpio_0' of component 'embsys_axi_gpio_0_0' [G:/ECE544/project_1/project_1.srcs/sources_1/bd/embsys/synth/embsys.vhd:4885]
+INFO: [Synth 8-638] synthesizing module 'embsys_axi_gpio_0_0' [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/realtime/embsys_axi_gpio_0_0_stub.vhdl:32]
+INFO: [Synth 8-3491] module 'embsys_axi_gpio_1_0' declared at 'G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/realtime/embsys_axi_gpio_1_0_stub.vhdl:5' bound to instance 'axi_gpio_1' of component 'embsys_axi_gpio_1_0' [G:/ECE544/project_1/project_1.srcs/sources_1/bd/embsys/synth/embsys.vhd:4909]
+INFO: [Synth 8-638] synthesizing module 'embsys_axi_gpio_1_0' [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/realtime/embsys_axi_gpio_1_0_stub.vhdl:32]
+INFO: [Synth 8-3491] module 'embsys_axi_gpio_2_0' declared at 'G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/realtime/embsys_axi_gpio_2_0_stub.vhdl:5' bound to instance 'axi_gpio_2' of component 'embsys_axi_gpio_2_0' [G:/ECE544/project_1/project_1.srcs/sources_1/bd/embsys/synth/embsys.vhd:4933]
+INFO: [Synth 8-638] synthesizing module 'embsys_axi_gpio_2_0' [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/realtime/embsys_axi_gpio_2_0_stub.vhdl:32]
+INFO: [Synth 8-3491] module 'embsys_axi_gpio_3_0' declared at 'G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/realtime/embsys_axi_gpio_3_0_stub.vhdl:5' bound to instance 'axi_gpio_3' of component 'embsys_axi_gpio_3_0' [G:/ECE544/project_1/project_1.srcs/sources_1/bd/embsys/synth/embsys.vhd:4957]
+INFO: [Synth 8-638] synthesizing module 'embsys_axi_gpio_3_0' [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/realtime/embsys_axi_gpio_3_0_stub.vhdl:32]
+INFO: [Synth 8-3491] module 'embsys_axi_timer_0_0' declared at 'G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/realtime/embsys_axi_timer_0_0_stub.vhdl:5' bound to instance 'axi_timer_0' of component 'embsys_axi_timer_0_0' [G:/ECE544/project_1/project_1.srcs/sources_1/bd/embsys/synth/embsys.vhd:4981]
+INFO: [Synth 8-638] synthesizing module 'embsys_axi_timer_0_0' [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/realtime/embsys_axi_timer_0_0_stub.vhdl:37]
+INFO: [Synth 8-3491] module 'embsys_axi_uartlite_0_0' declared at 'G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/realtime/embsys_axi_uartlite_0_0_stub.vhdl:5' bound to instance 'axi_uartlite_0' of component 'embsys_axi_uartlite_0_0' [G:/ECE544/project_1/project_1.srcs/sources_1/bd/embsys/synth/embsys.vhd:5010]
+INFO: [Synth 8-638] synthesizing module 'embsys_axi_uartlite_0_0' [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/realtime/embsys_axi_uartlite_0_0_stub.vhdl:33]
+INFO: [Synth 8-3491] module 'embsys_clk_wiz_1_0' declared at 'G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/realtime/embsys_clk_wiz_1_0_stub.vhdl:5' bound to instance 'clk_wiz_1' of component 'embsys_clk_wiz_1_0' [G:/ECE544/project_1/project_1.srcs/sources_1/bd/embsys/synth/embsys.vhd:5035]
+INFO: [Synth 8-638] synthesizing module 'embsys_clk_wiz_1_0' [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/realtime/embsys_clk_wiz_1_0_stub.vhdl:16]
+INFO: [Synth 8-3491] module 'embsys_fit_timer_0_0' declared at 'G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/realtime/embsys_fit_timer_0_0_stub.vhdl:5' bound to instance 'fit_timer_0' of component 'embsys_fit_timer_0_0' [G:/ECE544/project_1/project_1.srcs/sources_1/bd/embsys/synth/embsys.vhd:5043]
+INFO: [Synth 8-638] synthesizing module 'embsys_fit_timer_0_0' [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/realtime/embsys_fit_timer_0_0_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'embsys_mdm_1_0' declared at 'G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/realtime/embsys_mdm_1_0_stub.vhdl:5' bound to instance 'mdm_1' of component 'embsys_mdm_1_0' [G:/ECE544/project_1/project_1.srcs/sources_1/bd/embsys/synth/embsys.vhd:5049]
+INFO: [Synth 8-638] synthesizing module 'embsys_mdm_1_0' [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/realtime/embsys_mdm_1_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'embsys_microblaze_0_0' declared at 'G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/realtime/embsys_microblaze_0_0_stub.vhdl:5' bound to instance 'microblaze_0' of component 'embsys_microblaze_0_0' [G:/ECE544/project_1/project_1.srcs/sources_1/bd/embsys/synth/embsys.vhd:5062]
+INFO: [Synth 8-638] synthesizing module 'embsys_microblaze_0_0' [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/realtime/embsys_microblaze_0_0_stub.vhdl:63]
+INFO: [Synth 8-3491] module 'embsys_microblaze_0_axi_intc_0' declared at 'G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/realtime/embsys_microblaze_0_axi_intc_0_stub.vhdl:5' bound to instance 'microblaze_0_axi_intc' of component 'embsys_microblaze_0_axi_intc_0' [G:/ECE544/project_1/project_1.srcs/sources_1/bd/embsys/synth/embsys.vhd:5148]
+INFO: [Synth 8-638] synthesizing module 'embsys_microblaze_0_axi_intc_0' [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/realtime/embsys_microblaze_0_axi_intc_0_stub.vhdl:36]
 INFO: [Synth 8-638] synthesizing module 'embsys_microblaze_0_axi_periph_0' [G:/ECE544/project_1/project_1.srcs/sources_1/bd/embsys/synth/embsys.vhd:2211]
 INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_OEGTNN' [G:/ECE544/project_1/project_1.srcs/sources_1/bd/embsys/synth/embsys.vhd:57]
 INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_OEGTNN' (1#1) [G:/ECE544/project_1/project_1.srcs/sources_1/bd/embsys/synth/embsys.vhd:57]
@@ -78,36 +79,37 @@ INFO: [Synth 8-638] synthesizing module 'm11_couplers_imp_Z0XR01' [G:/ECE544/pro
 INFO: [Synth 8-256] done synthesizing module 'm11_couplers_imp_Z0XR01' (12#1) [G:/ECE544/project_1/project_1.srcs/sources_1/bd/embsys/synth/embsys.vhd:1218]
 INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_QRRRG2' [G:/ECE544/project_1/project_1.srcs/sources_1/bd/embsys/synth/embsys.vhd:1881]
 INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_QRRRG2' (13#1) [G:/ECE544/project_1/project_1.srcs/sources_1/bd/embsys/synth/embsys.vhd:1881]
-INFO: [Synth 8-3491] module 'embsys_xbar_0' declared at 'G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/realtime/embsys_xbar_0_stub.vhdl:5' bound to instance 'xbar' of component 'embsys_xbar_0' [G:/ECE544/project_1/project_1.srcs/sources_1/bd/embsys/synth/embsys.vhd:3571]
-INFO: [Synth 8-638] synthesizing module 'embsys_xbar_0' [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/realtime/embsys_xbar_0_stub.vhdl:51]
+INFO: [Synth 8-3491] module 'embsys_xbar_0' declared at 'G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/realtime/embsys_xbar_0_stub.vhdl:5' bound to instance 'xbar' of component 'embsys_xbar_0' [G:/ECE544/project_1/project_1.srcs/sources_1/bd/embsys/synth/embsys.vhd:3571]
+INFO: [Synth 8-638] synthesizing module 'embsys_xbar_0' [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/realtime/embsys_xbar_0_stub.vhdl:51]
 INFO: [Synth 8-256] done synthesizing module 'embsys_microblaze_0_axi_periph_0' (14#1) [G:/ECE544/project_1/project_1.srcs/sources_1/bd/embsys/synth/embsys.vhd:2211]
 INFO: [Synth 8-638] synthesizing module 'microblaze_0_local_memory_imp_1SR2TDT' [G:/ECE544/project_1/project_1.srcs/sources_1/bd/embsys/synth/embsys.vhd:1302]
-INFO: [Synth 8-3491] module 'embsys_dlmb_bram_if_cntlr_0' declared at 'G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/realtime/embsys_dlmb_bram_if_cntlr_0_stub.vhdl:5' bound to instance 'dlmb_bram_if_cntlr' of component 'embsys_dlmb_bram_if_cntlr_0' [G:/ECE544/project_1/project_1.srcs/sources_1/bd/embsys/synth/embsys.vhd:1516]
-INFO: [Synth 8-638] synthesizing module 'embsys_dlmb_bram_if_cntlr_0' [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/realtime/embsys_dlmb_bram_if_cntlr_0_stub.vhdl:31]
-INFO: [Synth 8-3491] module 'embsys_dlmb_v10_0' declared at 'G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/realtime/embsys_dlmb_v10_0_stub.vhdl:5' bound to instance 'dlmb_v10' of component 'embsys_dlmb_v10_0' [G:/ECE544/project_1/project_1.srcs/sources_1/bd/embsys/synth/embsys.vhd:1570]
-INFO: [Synth 8-638] synthesizing module 'embsys_dlmb_v10_0' [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/realtime/embsys_dlmb_v10_0_stub.vhdl:36]
-INFO: [Synth 8-3491] module 'embsys_ilmb_bram_if_cntlr_0' declared at 'G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/realtime/embsys_ilmb_bram_if_cntlr_0_stub.vhdl:5' bound to instance 'ilmb_bram_if_cntlr' of component 'embsys_ilmb_bram_if_cntlr_0' [G:/ECE544/project_1/project_1.srcs/sources_1/bd/embsys/synth/embsys.vhd:1598]
-INFO: [Synth 8-638] synthesizing module 'embsys_ilmb_bram_if_cntlr_0' [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/realtime/embsys_ilmb_bram_if_cntlr_0_stub.vhdl:31]
-INFO: [Synth 8-3491] module 'embsys_ilmb_v10_0' declared at 'G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/realtime/embsys_ilmb_v10_0_stub.vhdl:5' bound to instance 'ilmb_v10' of component 'embsys_ilmb_v10_0' [G:/ECE544/project_1/project_1.srcs/sources_1/bd/embsys/synth/embsys.vhd:1652]
-INFO: [Synth 8-638] synthesizing module 'embsys_ilmb_v10_0' [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/realtime/embsys_ilmb_v10_0_stub.vhdl:36]
-INFO: [Synth 8-3491] module 'embsys_lmb_bram_0' declared at 'G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/realtime/embsys_lmb_bram_0_stub.vhdl:5' bound to instance 'lmb_bram' of component 'embsys_lmb_bram_0' [G:/ECE544/project_1/project_1.srcs/sources_1/bd/embsys/synth/embsys.vhd:1680]
-INFO: [Synth 8-638] synthesizing module 'embsys_lmb_bram_0' [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/realtime/embsys_lmb_bram_0_stub.vhdl:27]
+INFO: [Synth 8-3491] module 'embsys_dlmb_bram_if_cntlr_0' declared at 'G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/realtime/embsys_dlmb_bram_if_cntlr_0_stub.vhdl:5' bound to instance 'dlmb_bram_if_cntlr' of component 'embsys_dlmb_bram_if_cntlr_0' [G:/ECE544/project_1/project_1.srcs/sources_1/bd/embsys/synth/embsys.vhd:1516]
+INFO: [Synth 8-638] synthesizing module 'embsys_dlmb_bram_if_cntlr_0' [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/realtime/embsys_dlmb_bram_if_cntlr_0_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'embsys_dlmb_v10_0' declared at 'G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/realtime/embsys_dlmb_v10_0_stub.vhdl:5' bound to instance 'dlmb_v10' of component 'embsys_dlmb_v10_0' [G:/ECE544/project_1/project_1.srcs/sources_1/bd/embsys/synth/embsys.vhd:1570]
+INFO: [Synth 8-638] synthesizing module 'embsys_dlmb_v10_0' [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/realtime/embsys_dlmb_v10_0_stub.vhdl:36]
+INFO: [Synth 8-3491] module 'embsys_ilmb_bram_if_cntlr_0' declared at 'G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/realtime/embsys_ilmb_bram_if_cntlr_0_stub.vhdl:5' bound to instance 'ilmb_bram_if_cntlr' of component 'embsys_ilmb_bram_if_cntlr_0' [G:/ECE544/project_1/project_1.srcs/sources_1/bd/embsys/synth/embsys.vhd:1598]
+INFO: [Synth 8-638] synthesizing module 'embsys_ilmb_bram_if_cntlr_0' [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/realtime/embsys_ilmb_bram_if_cntlr_0_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'embsys_ilmb_v10_0' declared at 'G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/realtime/embsys_ilmb_v10_0_stub.vhdl:5' bound to instance 'ilmb_v10' of component 'embsys_ilmb_v10_0' [G:/ECE544/project_1/project_1.srcs/sources_1/bd/embsys/synth/embsys.vhd:1652]
+INFO: [Synth 8-638] synthesizing module 'embsys_ilmb_v10_0' [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/realtime/embsys_ilmb_v10_0_stub.vhdl:36]
+INFO: [Synth 8-3491] module 'embsys_lmb_bram_0' declared at 'G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/realtime/embsys_lmb_bram_0_stub.vhdl:5' bound to instance 'lmb_bram' of component 'embsys_lmb_bram_0' [G:/ECE544/project_1/project_1.srcs/sources_1/bd/embsys/synth/embsys.vhd:1680]
+INFO: [Synth 8-638] synthesizing module 'embsys_lmb_bram_0' [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/realtime/embsys_lmb_bram_0_stub.vhdl:27]
 INFO: [Synth 8-256] done synthesizing module 'microblaze_0_local_memory_imp_1SR2TDT' (15#1) [G:/ECE544/project_1/project_1.srcs/sources_1/bd/embsys/synth/embsys.vhd:1302]
-INFO: [Synth 8-3491] module 'embsys_microblaze_0_xlconcat_0' declared at 'G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/realtime/embsys_microblaze_0_xlconcat_0_stub.vhdl:5' bound to instance 'microblaze_0_xlconcat' of component 'embsys_microblaze_0_xlconcat_0' [G:/ECE544/project_1/project_1.srcs/sources_1/bd/embsys/synth/embsys.vhd:5458]
-INFO: [Synth 8-638] synthesizing module 'embsys_microblaze_0_xlconcat_0' [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/realtime/embsys_microblaze_0_xlconcat_0_stub.vhdl:14]
-INFO: [Synth 8-3491] module 'embsys_nexys4IO_0_0' declared at 'G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/realtime/embsys_nexys4IO_0_0_stub.vhdl:5' bound to instance 'nexys4IO_0' of component 'embsys_nexys4IO_0_0' [G:/ECE544/project_1/project_1.srcs/sources_1/bd/embsys/synth/embsys.vhd:5464]
-INFO: [Synth 8-638] synthesizing module 'embsys_nexys4IO_0_0' [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/realtime/embsys_nexys4IO_0_0_stub.vhdl:49]
-INFO: [Synth 8-3491] module 'embsys_rst_clk_wiz_1_100M_0' declared at 'G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/realtime/embsys_rst_clk_wiz_1_100M_0_stub.vhdl:5' bound to instance 'rst_clk_wiz_1_100M' of component 'embsys_rst_clk_wiz_1_100M_0' [G:/ECE544/project_1/project_1.srcs/sources_1/bd/embsys/synth/embsys.vhd:5505]
-INFO: [Synth 8-638] synthesizing module 'embsys_rst_clk_wiz_1_100M_0' [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/realtime/embsys_rst_clk_wiz_1_100M_0_stub.vhdl:21]
-INFO: [Synth 8-256] done synthesizing module 'embsys' (16#1) [G:/ECE544/project_1/project_1.srcs/sources_1/bd/embsys/synth/embsys.vhd:3920]
-WARNING: [Synth 8-350] instance 'EMBSYS' of module 'embsys' requires 56 connections, but only 50 given [G:/ESD/Project_1_release/hardware/n4fpga.v:125]
+INFO: [Synth 8-3491] module 'embsys_microblaze_0_xlconcat_0' declared at 'G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/realtime/embsys_microblaze_0_xlconcat_0_stub.vhdl:5' bound to instance 'microblaze_0_xlconcat' of component 'embsys_microblaze_0_xlconcat_0' [G:/ECE544/project_1/project_1.srcs/sources_1/bd/embsys/synth/embsys.vhd:5465]
+INFO: [Synth 8-638] synthesizing module 'embsys_microblaze_0_xlconcat_0' [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/realtime/embsys_microblaze_0_xlconcat_0_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'embsys_nexys4IO_0_0' declared at 'G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/realtime/embsys_nexys4IO_0_0_stub.vhdl:5' bound to instance 'nexys4IO_0' of component 'embsys_nexys4IO_0_0' [G:/ECE544/project_1/project_1.srcs/sources_1/bd/embsys/synth/embsys.vhd:5471]
+INFO: [Synth 8-638] synthesizing module 'embsys_nexys4IO_0_0' [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/realtime/embsys_nexys4IO_0_0_stub.vhdl:49]
+INFO: [Synth 8-3491] module 'embsys_rst_clk_wiz_1_100M_0' declared at 'G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/realtime/embsys_rst_clk_wiz_1_100M_0_stub.vhdl:5' bound to instance 'rst_clk_wiz_1_100M' of component 'embsys_rst_clk_wiz_1_100M_0' [G:/ECE544/project_1/project_1.srcs/sources_1/bd/embsys/synth/embsys.vhd:5512]
+INFO: [Synth 8-638] synthesizing module 'embsys_rst_clk_wiz_1_100M_0' [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/realtime/embsys_rst_clk_wiz_1_100M_0_stub.vhdl:21]
+INFO: [Synth 8-256] done synthesizing module 'embsys' (16#1) [G:/ECE544/project_1/project_1.srcs/sources_1/bd/embsys/synth/embsys.vhd:3921]
 INFO: [Synth 8-638] synthesizing module 'IOBUF' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:22655]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
 	Parameter IOSTANDARD bound to: DEFAULT - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
 INFO: [Synth 8-256] done synthesizing module 'IOBUF' (17#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:22655]
-INFO: [Synth 8-256] done synthesizing module 'n4fpga' (18#1) [G:/ESD/Project_1_release/hardware/n4fpga.v:19]
+INFO: [Synth 8-638] synthesizing module 'pwm_detection' [G:/ECE544/project_1/project_1.srcs/sources_1/imports/Desktop/pwm_detection.sv:14]
+INFO: [Synth 8-256] done synthesizing module 'pwm_detection' (18#1) [G:/ECE544/project_1/project_1.srcs/sources_1/imports/Desktop/pwm_detection.sv:14]
+INFO: [Synth 8-256] done synthesizing module 'n4fpga' (19#1) [G:/ECE544/project_1/project_1.srcs/sources_1/imports/Desktop/n4fpga.sv:20]
 WARNING: [Synth 8-3917] design n4fpga has port JB[7] driven by constant 0
 WARNING: [Synth 8-3917] design n4fpga has port JB[6] driven by constant 0
 WARNING: [Synth 8-3917] design n4fpga has port JB[5] driven by constant 0
@@ -181,7 +183,7 @@ WARNING: [Synth 8-3331] design n4fpga has unconnected port JD[2]
 WARNING: [Synth 8-3331] design n4fpga has unconnected port JD[1]
 WARNING: [Synth 8-3331] design n4fpga has unconnected port JD[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 455.973 ; gain = 161.367
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 456.855 ; gain = 161.715
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -190,56 +192,8 @@ Report Check Netlist:
 +------+------------------+-------+---------+-------+------------------+
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_blue_high_tri_i[7] to constant 0 [G:/ESD/Project_1_release/hardware/n4fpga.v:125]
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_blue_high_tri_i[6] to constant 0 [G:/ESD/Project_1_release/hardware/n4fpga.v:125]
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_blue_high_tri_i[5] to constant 0 [G:/ESD/Project_1_release/hardware/n4fpga.v:125]
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_blue_high_tri_i[4] to constant 0 [G:/ESD/Project_1_release/hardware/n4fpga.v:125]
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_blue_high_tri_i[3] to constant 0 [G:/ESD/Project_1_release/hardware/n4fpga.v:125]
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_blue_high_tri_i[2] to constant 0 [G:/ESD/Project_1_release/hardware/n4fpga.v:125]
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_blue_high_tri_i[1] to constant 0 [G:/ESD/Project_1_release/hardware/n4fpga.v:125]
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_blue_high_tri_i[0] to constant 0 [G:/ESD/Project_1_release/hardware/n4fpga.v:125]
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_blue_low_tri_i[7] to constant 0 [G:/ESD/Project_1_release/hardware/n4fpga.v:125]
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_blue_low_tri_i[6] to constant 0 [G:/ESD/Project_1_release/hardware/n4fpga.v:125]
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_blue_low_tri_i[5] to constant 0 [G:/ESD/Project_1_release/hardware/n4fpga.v:125]
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_blue_low_tri_i[4] to constant 0 [G:/ESD/Project_1_release/hardware/n4fpga.v:125]
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_blue_low_tri_i[3] to constant 0 [G:/ESD/Project_1_release/hardware/n4fpga.v:125]
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_blue_low_tri_i[2] to constant 0 [G:/ESD/Project_1_release/hardware/n4fpga.v:125]
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_blue_low_tri_i[1] to constant 0 [G:/ESD/Project_1_release/hardware/n4fpga.v:125]
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_blue_low_tri_i[0] to constant 0 [G:/ESD/Project_1_release/hardware/n4fpga.v:125]
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_green_high_tri_i[7] to constant 0 [G:/ESD/Project_1_release/hardware/n4fpga.v:125]
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_green_high_tri_i[6] to constant 0 [G:/ESD/Project_1_release/hardware/n4fpga.v:125]
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_green_high_tri_i[5] to constant 0 [G:/ESD/Project_1_release/hardware/n4fpga.v:125]
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_green_high_tri_i[4] to constant 0 [G:/ESD/Project_1_release/hardware/n4fpga.v:125]
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_green_high_tri_i[3] to constant 0 [G:/ESD/Project_1_release/hardware/n4fpga.v:125]
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_green_high_tri_i[2] to constant 0 [G:/ESD/Project_1_release/hardware/n4fpga.v:125]
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_green_high_tri_i[1] to constant 0 [G:/ESD/Project_1_release/hardware/n4fpga.v:125]
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_green_high_tri_i[0] to constant 0 [G:/ESD/Project_1_release/hardware/n4fpga.v:125]
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_green_low_tri_i[7] to constant 0 [G:/ESD/Project_1_release/hardware/n4fpga.v:125]
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_green_low_tri_i[6] to constant 0 [G:/ESD/Project_1_release/hardware/n4fpga.v:125]
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_green_low_tri_i[5] to constant 0 [G:/ESD/Project_1_release/hardware/n4fpga.v:125]
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_green_low_tri_i[4] to constant 0 [G:/ESD/Project_1_release/hardware/n4fpga.v:125]
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_green_low_tri_i[3] to constant 0 [G:/ESD/Project_1_release/hardware/n4fpga.v:125]
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_green_low_tri_i[2] to constant 0 [G:/ESD/Project_1_release/hardware/n4fpga.v:125]
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_green_low_tri_i[1] to constant 0 [G:/ESD/Project_1_release/hardware/n4fpga.v:125]
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_green_low_tri_i[0] to constant 0 [G:/ESD/Project_1_release/hardware/n4fpga.v:125]
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_red_high_tri_i[7] to constant 0 [G:/ESD/Project_1_release/hardware/n4fpga.v:125]
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_red_high_tri_i[6] to constant 0 [G:/ESD/Project_1_release/hardware/n4fpga.v:125]
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_red_high_tri_i[5] to constant 0 [G:/ESD/Project_1_release/hardware/n4fpga.v:125]
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_red_high_tri_i[4] to constant 0 [G:/ESD/Project_1_release/hardware/n4fpga.v:125]
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_red_high_tri_i[3] to constant 0 [G:/ESD/Project_1_release/hardware/n4fpga.v:125]
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_red_high_tri_i[2] to constant 0 [G:/ESD/Project_1_release/hardware/n4fpga.v:125]
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_red_high_tri_i[1] to constant 0 [G:/ESD/Project_1_release/hardware/n4fpga.v:125]
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_red_high_tri_i[0] to constant 0 [G:/ESD/Project_1_release/hardware/n4fpga.v:125]
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_red_low_tri_i[7] to constant 0 [G:/ESD/Project_1_release/hardware/n4fpga.v:125]
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_red_low_tri_i[6] to constant 0 [G:/ESD/Project_1_release/hardware/n4fpga.v:125]
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_red_low_tri_i[5] to constant 0 [G:/ESD/Project_1_release/hardware/n4fpga.v:125]
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_red_low_tri_i[4] to constant 0 [G:/ESD/Project_1_release/hardware/n4fpga.v:125]
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_red_low_tri_i[3] to constant 0 [G:/ESD/Project_1_release/hardware/n4fpga.v:125]
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_red_low_tri_i[2] to constant 0 [G:/ESD/Project_1_release/hardware/n4fpga.v:125]
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_red_low_tri_i[1] to constant 0 [G:/ESD/Project_1_release/hardware/n4fpga.v:125]
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_red_low_tri_i[0] to constant 0 [G:/ESD/Project_1_release/hardware/n4fpga.v:125]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 455.973 ; gain = 161.367
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 456.855 ; gain = 161.715
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -248,50 +202,50 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/dcp45/embsys_microblaze_0_0_in_context.xdc] for cell 'EMBSYS/microblaze_0'
-Finished Parsing XDC File [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/dcp45/embsys_microblaze_0_0_in_context.xdc] for cell 'EMBSYS/microblaze_0'
-Parsing XDC File [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/dcp47/embsys_PmodENC_0_0_in_context.xdc] for cell 'EMBSYS/PmodENC_0'
-Finished Parsing XDC File [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/dcp47/embsys_PmodENC_0_0_in_context.xdc] for cell 'EMBSYS/PmodENC_0'
-Parsing XDC File [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/dcp49/embsys_PmodOLEDrgb_0_0_in_context.xdc] for cell 'EMBSYS/PmodOLEDrgb_0'
-Finished Parsing XDC File [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/dcp49/embsys_PmodOLEDrgb_0_0_in_context.xdc] for cell 'EMBSYS/PmodOLEDrgb_0'
-Parsing XDC File [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/dcp51/embsys_axi_timer_0_0_in_context.xdc] for cell 'EMBSYS/axi_timer_0'
-Finished Parsing XDC File [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/dcp51/embsys_axi_timer_0_0_in_context.xdc] for cell 'EMBSYS/axi_timer_0'
-Parsing XDC File [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/dcp53/embsys_fit_timer_0_0_in_context.xdc] for cell 'EMBSYS/fit_timer_0'
-Finished Parsing XDC File [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/dcp53/embsys_fit_timer_0_0_in_context.xdc] for cell 'EMBSYS/fit_timer_0'
-Parsing XDC File [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/dcp55/embsys_axi_gpio_0_0_in_context.xdc] for cell 'EMBSYS/axi_gpio_0'
-Finished Parsing XDC File [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/dcp55/embsys_axi_gpio_0_0_in_context.xdc] for cell 'EMBSYS/axi_gpio_0'
-Parsing XDC File [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/dcp57/embsys_axi_uartlite_0_0_in_context.xdc] for cell 'EMBSYS/axi_uartlite_0'
-Finished Parsing XDC File [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/dcp57/embsys_axi_uartlite_0_0_in_context.xdc] for cell 'EMBSYS/axi_uartlite_0'
-Parsing XDC File [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/dcp59/embsys_nexys4IO_0_0_in_context.xdc] for cell 'EMBSYS/nexys4IO_0'
-Finished Parsing XDC File [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/dcp59/embsys_nexys4IO_0_0_in_context.xdc] for cell 'EMBSYS/nexys4IO_0'
-Parsing XDC File [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/dcp61/embsys_microblaze_0_axi_intc_0_in_context.xdc] for cell 'EMBSYS/microblaze_0_axi_intc'
-Finished Parsing XDC File [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/dcp61/embsys_microblaze_0_axi_intc_0_in_context.xdc] for cell 'EMBSYS/microblaze_0_axi_intc'
-Parsing XDC File [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/dcp63/embsys_microblaze_0_xlconcat_0_in_context.xdc] for cell 'EMBSYS/microblaze_0_xlconcat'
-Finished Parsing XDC File [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/dcp63/embsys_microblaze_0_xlconcat_0_in_context.xdc] for cell 'EMBSYS/microblaze_0_xlconcat'
-Parsing XDC File [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/dcp65/embsys_mdm_1_0_in_context.xdc] for cell 'EMBSYS/mdm_1'
-Finished Parsing XDC File [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/dcp65/embsys_mdm_1_0_in_context.xdc] for cell 'EMBSYS/mdm_1'
-Parsing XDC File [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/dcp67/embsys_clk_wiz_1_0_in_context.xdc] for cell 'EMBSYS/clk_wiz_1'
-Finished Parsing XDC File [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/dcp67/embsys_clk_wiz_1_0_in_context.xdc] for cell 'EMBSYS/clk_wiz_1'
-Parsing XDC File [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/dcp69/embsys_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'EMBSYS/rst_clk_wiz_1_100M'
-Finished Parsing XDC File [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/dcp69/embsys_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'EMBSYS/rst_clk_wiz_1_100M'
-Parsing XDC File [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/dcp71/embsys_xbar_0_in_context.xdc] for cell 'EMBSYS/microblaze_0_axi_periph/xbar'
-Finished Parsing XDC File [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/dcp71/embsys_xbar_0_in_context.xdc] for cell 'EMBSYS/microblaze_0_axi_periph/xbar'
-Parsing XDC File [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/dcp73/embsys_dlmb_v10_0_in_context.xdc] for cell 'EMBSYS/microblaze_0_local_memory/dlmb_v10'
-Finished Parsing XDC File [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/dcp73/embsys_dlmb_v10_0_in_context.xdc] for cell 'EMBSYS/microblaze_0_local_memory/dlmb_v10'
-Parsing XDC File [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/dcp75/embsys_dlmb_v10_0_in_context.xdc] for cell 'EMBSYS/microblaze_0_local_memory/ilmb_v10'
-Finished Parsing XDC File [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/dcp75/embsys_dlmb_v10_0_in_context.xdc] for cell 'EMBSYS/microblaze_0_local_memory/ilmb_v10'
-Parsing XDC File [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/dcp77/embsys_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'EMBSYS/microblaze_0_local_memory/dlmb_bram_if_cntlr'
-Finished Parsing XDC File [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/dcp77/embsys_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'EMBSYS/microblaze_0_local_memory/dlmb_bram_if_cntlr'
-Parsing XDC File [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/dcp79/embsys_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'EMBSYS/microblaze_0_local_memory/ilmb_bram_if_cntlr'
-Finished Parsing XDC File [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/dcp79/embsys_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'EMBSYS/microblaze_0_local_memory/ilmb_bram_if_cntlr'
-Parsing XDC File [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/dcp81/embsys_lmb_bram_0_in_context.xdc] for cell 'EMBSYS/microblaze_0_local_memory/lmb_bram'
-Finished Parsing XDC File [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/dcp81/embsys_lmb_bram_0_in_context.xdc] for cell 'EMBSYS/microblaze_0_local_memory/lmb_bram'
-Parsing XDC File [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/dcp83/embsys_axi_gpio_0_0_in_context.xdc] for cell 'EMBSYS/axi_gpio_1'
-Finished Parsing XDC File [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/dcp83/embsys_axi_gpio_0_0_in_context.xdc] for cell 'EMBSYS/axi_gpio_1'
-Parsing XDC File [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/dcp85/embsys_axi_gpio_0_0_in_context.xdc] for cell 'EMBSYS/axi_gpio_2'
-Finished Parsing XDC File [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/dcp85/embsys_axi_gpio_0_0_in_context.xdc] for cell 'EMBSYS/axi_gpio_2'
-Parsing XDC File [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/dcp87/embsys_axi_gpio_0_0_in_context.xdc] for cell 'EMBSYS/axi_gpio_3'
-Finished Parsing XDC File [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/dcp87/embsys_axi_gpio_0_0_in_context.xdc] for cell 'EMBSYS/axi_gpio_3'
+Parsing XDC File [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/dcp45/embsys_microblaze_0_0_in_context.xdc] for cell 'EMBSYS/microblaze_0'
+Finished Parsing XDC File [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/dcp45/embsys_microblaze_0_0_in_context.xdc] for cell 'EMBSYS/microblaze_0'
+Parsing XDC File [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/dcp47/embsys_PmodENC_0_0_in_context.xdc] for cell 'EMBSYS/PmodENC_0'
+Finished Parsing XDC File [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/dcp47/embsys_PmodENC_0_0_in_context.xdc] for cell 'EMBSYS/PmodENC_0'
+Parsing XDC File [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/dcp49/embsys_PmodOLEDrgb_0_0_in_context.xdc] for cell 'EMBSYS/PmodOLEDrgb_0'
+Finished Parsing XDC File [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/dcp49/embsys_PmodOLEDrgb_0_0_in_context.xdc] for cell 'EMBSYS/PmodOLEDrgb_0'
+Parsing XDC File [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/dcp51/embsys_axi_timer_0_0_in_context.xdc] for cell 'EMBSYS/axi_timer_0'
+Finished Parsing XDC File [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/dcp51/embsys_axi_timer_0_0_in_context.xdc] for cell 'EMBSYS/axi_timer_0'
+Parsing XDC File [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/dcp53/embsys_fit_timer_0_0_in_context.xdc] for cell 'EMBSYS/fit_timer_0'
+Finished Parsing XDC File [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/dcp53/embsys_fit_timer_0_0_in_context.xdc] for cell 'EMBSYS/fit_timer_0'
+Parsing XDC File [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/dcp55/embsys_axi_gpio_0_0_in_context.xdc] for cell 'EMBSYS/axi_gpio_0'
+Finished Parsing XDC File [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/dcp55/embsys_axi_gpio_0_0_in_context.xdc] for cell 'EMBSYS/axi_gpio_0'
+Parsing XDC File [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/dcp57/embsys_axi_uartlite_0_0_in_context.xdc] for cell 'EMBSYS/axi_uartlite_0'
+Finished Parsing XDC File [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/dcp57/embsys_axi_uartlite_0_0_in_context.xdc] for cell 'EMBSYS/axi_uartlite_0'
+Parsing XDC File [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/dcp59/embsys_nexys4IO_0_0_in_context.xdc] for cell 'EMBSYS/nexys4IO_0'
+Finished Parsing XDC File [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/dcp59/embsys_nexys4IO_0_0_in_context.xdc] for cell 'EMBSYS/nexys4IO_0'
+Parsing XDC File [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/dcp61/embsys_microblaze_0_axi_intc_0_in_context.xdc] for cell 'EMBSYS/microblaze_0_axi_intc'
+Finished Parsing XDC File [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/dcp61/embsys_microblaze_0_axi_intc_0_in_context.xdc] for cell 'EMBSYS/microblaze_0_axi_intc'
+Parsing XDC File [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/dcp63/embsys_microblaze_0_xlconcat_0_in_context.xdc] for cell 'EMBSYS/microblaze_0_xlconcat'
+Finished Parsing XDC File [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/dcp63/embsys_microblaze_0_xlconcat_0_in_context.xdc] for cell 'EMBSYS/microblaze_0_xlconcat'
+Parsing XDC File [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/dcp65/embsys_mdm_1_0_in_context.xdc] for cell 'EMBSYS/mdm_1'
+Finished Parsing XDC File [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/dcp65/embsys_mdm_1_0_in_context.xdc] for cell 'EMBSYS/mdm_1'
+Parsing XDC File [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/dcp67/embsys_clk_wiz_1_0_in_context.xdc] for cell 'EMBSYS/clk_wiz_1'
+Finished Parsing XDC File [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/dcp67/embsys_clk_wiz_1_0_in_context.xdc] for cell 'EMBSYS/clk_wiz_1'
+Parsing XDC File [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/dcp69/embsys_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'EMBSYS/rst_clk_wiz_1_100M'
+Finished Parsing XDC File [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/dcp69/embsys_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'EMBSYS/rst_clk_wiz_1_100M'
+Parsing XDC File [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/dcp71/embsys_xbar_0_in_context.xdc] for cell 'EMBSYS/microblaze_0_axi_periph/xbar'
+Finished Parsing XDC File [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/dcp71/embsys_xbar_0_in_context.xdc] for cell 'EMBSYS/microblaze_0_axi_periph/xbar'
+Parsing XDC File [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/dcp73/embsys_dlmb_v10_0_in_context.xdc] for cell 'EMBSYS/microblaze_0_local_memory/dlmb_v10'
+Finished Parsing XDC File [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/dcp73/embsys_dlmb_v10_0_in_context.xdc] for cell 'EMBSYS/microblaze_0_local_memory/dlmb_v10'
+Parsing XDC File [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/dcp75/embsys_dlmb_v10_0_in_context.xdc] for cell 'EMBSYS/microblaze_0_local_memory/ilmb_v10'
+Finished Parsing XDC File [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/dcp75/embsys_dlmb_v10_0_in_context.xdc] for cell 'EMBSYS/microblaze_0_local_memory/ilmb_v10'
+Parsing XDC File [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/dcp77/embsys_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'EMBSYS/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Finished Parsing XDC File [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/dcp77/embsys_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'EMBSYS/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Parsing XDC File [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/dcp79/embsys_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'EMBSYS/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Finished Parsing XDC File [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/dcp79/embsys_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'EMBSYS/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Parsing XDC File [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/dcp81/embsys_lmb_bram_0_in_context.xdc] for cell 'EMBSYS/microblaze_0_local_memory/lmb_bram'
+Finished Parsing XDC File [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/dcp81/embsys_lmb_bram_0_in_context.xdc] for cell 'EMBSYS/microblaze_0_local_memory/lmb_bram'
+Parsing XDC File [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/dcp83/embsys_axi_gpio_1_0_in_context.xdc] for cell 'EMBSYS/axi_gpio_1'
+Finished Parsing XDC File [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/dcp83/embsys_axi_gpio_1_0_in_context.xdc] for cell 'EMBSYS/axi_gpio_1'
+Parsing XDC File [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/dcp85/embsys_axi_gpio_1_0_in_context.xdc] for cell 'EMBSYS/axi_gpio_2'
+Finished Parsing XDC File [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/dcp85/embsys_axi_gpio_1_0_in_context.xdc] for cell 'EMBSYS/axi_gpio_2'
+Parsing XDC File [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/dcp87/embsys_axi_gpio_1_0_in_context.xdc] for cell 'EMBSYS/axi_gpio_3'
+Finished Parsing XDC File [G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/dcp87/embsys_axi_gpio_1_0_in_context.xdc] for cell 'EMBSYS/axi_gpio_3'
 Parsing XDC File [G:/ESD/Project_1_release/constraints/n4DDRfpga.xdc]
 Finished Parsing XDC File [G:/ESD/Project_1_release/constraints/n4DDRfpga.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [G:/ESD/Project_1_release/constraints/n4DDRfpga.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/n4fpga_propImpl.xdc].
@@ -304,23 +258,23 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 8 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 8 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 787.742 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 814.348 ; gain = 0.000
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'EMBSYS/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 787.742 ; gain = 493.137
+Finished Constraint Validation : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 814.348 ; gain = 519.207
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 787.742 ; gain = 493.137
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 814.348 ; gain = 519.207
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/dcp67/embsys_clk_wiz_1_0_in_context.xdc, line 4).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-14144-LAPTOP-C1T6PIG6/dcp67/embsys_clk_wiz_1_0_in_context.xdc, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/dcp67/embsys_clk_wiz_1_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  G:/ECE544/project_1/project_1.runs/synth_1/.Xil/Vivado-16848-LAPTOP-C1T6PIG6/dcp67/embsys_clk_wiz_1_0_in_context.xdc, line 6).
 Applied set_property DONT_TOUCH = true for EMBSYS. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for EMBSYS/PmodENC_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for EMBSYS/PmodOLEDrgb_0. (constraint file  auto generated constraint, line ).
@@ -346,10 +300,12 @@ Applied set_property DONT_TOUCH = true for EMBSYS/microblaze_0_xlconcat. (constr
 Applied set_property DONT_TOUCH = true for EMBSYS/nexys4IO_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for EMBSYS/rst_clk_wiz_1_100M. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 787.742 ; gain = 493.137
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 814.348 ; gain = 519.207
 ---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element high_timer_reg was removed.  [G:/ECE544/project_1/project_1.srcs/sources_1/imports/Desktop/pwm_detection.sv:25]
+WARNING: [Synth 8-6014] Unused sequential element low_timer_reg was removed.  [G:/ECE544/project_1/project_1.srcs/sources_1/imports/Desktop/pwm_detection.sv:31]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 787.742 ; gain = 493.137
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 814.348 ; gain = 519.207
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -361,6 +317,9 @@ Report RTL Partitions:
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 6     
+	                1 Bit    Registers := 3     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -368,6 +327,11 @@ Finished RTL Component Statistics
 Start RTL Hierarchical Component Statistics 
 ---------------------------------------------------------------------------------
 Hierarchical RTL Component report 
+Module pwm_detection 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -383,6 +347,12 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element pwdr/high_timer_reg was removed.  [G:/ECE544/project_1/project_1.srcs/sources_1/imports/Desktop/pwm_detection.sv:25]
+WARNING: [Synth 8-6014] Unused sequential element pwdr/low_timer_reg was removed.  [G:/ECE544/project_1/project_1.srcs/sources_1/imports/Desktop/pwm_detection.sv:31]
+WARNING: [Synth 8-6014] Unused sequential element pwdb/high_timer_reg was removed.  [G:/ECE544/project_1/project_1.srcs/sources_1/imports/Desktop/pwm_detection.sv:25]
+WARNING: [Synth 8-6014] Unused sequential element pwdb/low_timer_reg was removed.  [G:/ECE544/project_1/project_1.srcs/sources_1/imports/Desktop/pwm_detection.sv:31]
+WARNING: [Synth 8-6014] Unused sequential element pwdg/high_timer_reg was removed.  [G:/ECE544/project_1/project_1.srcs/sources_1/imports/Desktop/pwm_detection.sv:25]
+WARNING: [Synth 8-6014] Unused sequential element pwdg/low_timer_reg was removed.  [G:/ECE544/project_1/project_1.srcs/sources_1/imports/Desktop/pwm_detection.sv:31]
 WARNING: [Synth 8-3917] design n4fpga has port JB[7] driven by constant 0
 WARNING: [Synth 8-3917] design n4fpga has port JB[6] driven by constant 0
 WARNING: [Synth 8-3917] design n4fpga has port JB[5] driven by constant 0
@@ -430,7 +400,7 @@ WARNING: [Synth 8-3331] design n4fpga has unconnected port JD[2]
 WARNING: [Synth 8-3331] design n4fpga has unconnected port JD[1]
 WARNING: [Synth 8-3331] design n4fpga has unconnected port JD[0]
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 787.742 ; gain = 493.137
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 814.348 ; gain = 519.207
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -445,17 +415,18 @@ INFO: [Synth 8-5578] Moved timing constraint from pin 'EMBSYS/mdm_1/Dbg_Clk_0' t
 INFO: [Synth 8-5578] Moved timing constraint from pin 'EMBSYS/mdm_1/Dbg_Update_0' to pin 'EMBSYS/mdm_1/bbstub_Dbg_Update_0/O'
 INFO: [Synth 8-5578] Moved timing constraint from pin 'EMBSYS/clk_wiz_1/clk_out1' to pin 'EMBSYS/clk_wiz_1/bbstub_clk_out1/O'
 INFO: [Synth 8-5578] Moved timing constraint from pin 'EMBSYS/clk_wiz_1/clk_out2' to pin 'EMBSYS/clk_wiz_1/bbstub_clk_out2/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'EMBSYS/clk_wiz_1/clk_out3' to pin 'EMBSYS/clk_wiz_1/bbstub_clk_out3/O'
 INFO: [Synth 8-5578] Moved timing constraint from pin 'EMBSYS/microblaze_0_local_memory/dlmb_bram_if_cntlr/BRAM_Clk_A' to pin 'EMBSYS/microblaze_0_local_memory/dlmb_bram_if_cntlr/bbstub_BRAM_Clk_A/O'
 INFO: [Synth 8-5578] Moved timing constraint from pin 'EMBSYS/microblaze_0_local_memory/ilmb_bram_if_cntlr/BRAM_Clk_A' to pin 'EMBSYS/microblaze_0_local_memory/ilmb_bram_if_cntlr/bbstub_BRAM_Clk_A/O'
-INFO: [Synth 8-5819] Moved 6 constraints on hierarchical pins to their respective driving/loading pins
+INFO: [Synth 8-5819] Moved 7 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 787.742 ; gain = 493.137
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:43 ; elapsed = 00:00:47 . Memory (MB): peak = 814.348 ; gain = 519.207
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 787.742 ; gain = 493.137
+Finished Timing Optimization : Time (s): cpu = 00:00:43 ; elapsed = 00:00:47 . Memory (MB): peak = 814.805 ; gain = 519.664
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -467,7 +438,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 787.742 ; gain = 493.137
+Finished Technology Mapping : Time (s): cpu = 00:00:44 ; elapsed = 00:00:48 . Memory (MB): peak = 816.078 ; gain = 520.938
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -490,56 +461,8 @@ Start Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_blue_high_tri_i[7] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_blue_high_tri_i[6] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_blue_high_tri_i[5] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_blue_high_tri_i[4] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_blue_high_tri_i[3] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_blue_high_tri_i[2] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_blue_high_tri_i[1] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_blue_high_tri_i[0] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_blue_low_tri_i[7] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_blue_low_tri_i[6] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_blue_low_tri_i[5] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_blue_low_tri_i[4] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_blue_low_tri_i[3] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_blue_low_tri_i[2] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_blue_low_tri_i[1] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_blue_low_tri_i[0] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_green_high_tri_i[7] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_green_high_tri_i[6] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_green_high_tri_i[5] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_green_high_tri_i[4] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_green_high_tri_i[3] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_green_high_tri_i[2] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_green_high_tri_i[1] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_green_high_tri_i[0] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_green_low_tri_i[7] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_green_low_tri_i[6] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_green_low_tri_i[5] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_green_low_tri_i[4] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_green_low_tri_i[3] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_green_low_tri_i[2] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_green_low_tri_i[1] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_green_low_tri_i[0] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_red_high_tri_i[7] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_red_high_tri_i[6] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_red_high_tri_i[5] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_red_high_tri_i[4] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_red_high_tri_i[3] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_red_high_tri_i[2] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_red_high_tri_i[1] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_red_high_tri_i[0] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_red_low_tri_i[7] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_red_low_tri_i[6] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_red_low_tri_i[5] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_red_low_tri_i[4] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_red_low_tri_i[3] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_red_low_tri_i[2] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_red_low_tri_i[1] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin EMBSYS:gpio_0_red_low_tri_i[0] to constant 0
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 787.742 ; gain = 493.137
+Finished IO Insertion : Time (s): cpu = 00:00:45 ; elapsed = 00:00:49 . Memory (MB): peak = 816.078 ; gain = 520.938
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -552,7 +475,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 787.742 ; gain = 493.137
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:45 ; elapsed = 00:00:49 . Memory (MB): peak = 816.078 ; gain = 520.938
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -564,25 +487,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 787.742 ; gain = 493.137
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:45 ; elapsed = 00:00:49 . Memory (MB): peak = 816.078 ; gain = 520.938
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 787.742 ; gain = 493.137
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:45 ; elapsed = 00:00:49 . Memory (MB): peak = 816.078 ; gain = 520.938
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 787.742 ; gain = 493.137
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:45 ; elapsed = 00:00:49 . Memory (MB): peak = 816.078 ; gain = 520.938
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 787.742 ; gain = 493.137
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:45 ; elapsed = 00:00:49 . Memory (MB): peak = 816.078 ; gain = 520.938
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -642,28 +565,38 @@ Report Cell Usage:
 |20    |embsys_nexys4IO_0_0_bbox_20            |     1|
 |21    |embsys_rst_clk_wiz_1_100M_0_bbox_21    |     1|
 |22    |embsys_xbar_0_bbox_13                  |     1|
-|23    |IBUF                                   |    27|
-|24    |IOBUF                                  |     8|
-|25    |OBUF                                   |    55|
+|23    |CARRY4                                 |    48|
+|24    |LUT1                                   |     6|
+|25    |LUT2                                   |     3|
+|26    |LUT4                                   |    15|
+|27    |LUT5                                   |    12|
+|28    |LUT6                                   |     6|
+|29    |FDRE                                   |   387|
+|30    |IBUF                                   |    27|
+|31    |IOBUF                                  |     8|
+|32    |OBUF                                   |    55|
 +------+---------------------------------------+------+
 
 Report Instance Areas: 
 +------+------------------------------+--------------------------------------+------+
 |      |Instance                      |Module                                |Cells |
 +------+------------------------------+--------------------------------------+------+
-|1     |top                           |                                      |  2757|
-|2     |  EMBSYS                      |embsys                                |  2667|
+|1     |top                           |                                      |  3235|
+|2     |  EMBSYS                      |embsys                                |  2668|
 |3     |    microblaze_0_axi_periph   |embsys_microblaze_0_axi_periph_0      |  1373|
 |4     |    microblaze_0_local_memory |microblaze_0_local_memory_imp_1SR2TDT |   496|
+|5     |  pwdb                        |pwm_detection                         |   159|
+|6     |  pwdg                        |pwm_detection_0                       |   159|
+|7     |  pwdr                        |pwm_detection_1                       |   159|
 +------+------------------------------+--------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 787.742 ; gain = 493.137
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:45 ; elapsed = 00:00:49 . Memory (MB): peak = 816.078 ; gain = 520.938
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 94 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:27 . Memory (MB): peak = 787.742 ; gain = 161.367
-Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 787.742 ; gain = 493.137
+Synthesis finished with 0 errors, 0 critical warnings and 54 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:39 . Memory (MB): peak = 816.078 ; gain = 163.445
+Synthesis Optimization Complete : Time (s): cpu = 00:00:45 ; elapsed = 00:00:49 . Memory (MB): peak = 816.078 ; gain = 520.938
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 35 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 83 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -672,10 +605,10 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   IOBUF => IOBUF (IBUF, OBUFT): 8 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-104 Infos, 218 Warnings, 0 Critical Warnings and 0 Errors encountered.
+107 Infos, 129 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 793.797 ; gain = 507.008
+synth_design: Time (s): cpu = 00:00:48 ; elapsed = 00:00:54 . Memory (MB): peak = 816.480 ; gain = 528.227
 INFO: [Common 17-1381] The checkpoint 'G:/ECE544/project_1/project_1.runs/synth_1/n4fpga.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file n4fpga_utilization_synth.rpt -pb n4fpga_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 794.188 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Wed Jan 24 20:54:53 2018...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.049 . Memory (MB): peak = 816.480 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Jan 30 14:52:01 2018...

@@ -30,7 +30,10 @@ set_property target_language VHDL [current_project]
 set_property ip_repo_paths g:/ECE544/ip_repo_544_p1 [current_project]
 set_property ip_output_repo g:/ECE544/project_1/project_1.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-read_verilog -library xil_defaultlib G:/ESD/Project_1_release/hardware/n4fpga.v
+read_verilog -library xil_defaultlib -sv {
+  G:/ECE544/project_1/project_1.srcs/sources_1/imports/Desktop/pwm_detection.sv
+  G:/ECE544/project_1/project_1.srcs/sources_1/imports/Desktop/n4fpga.sv
+}
 add_files G:/ECE544/project_1/project_1.srcs/sources_1/bd/embsys/embsys.bd
 set_property used_in_implementation false [get_files -all g:/ECE544/project_1/project_1.srcs/sources_1/bd/embsys/ip/embsys_microblaze_0_0/embsys_microblaze_0_0.xdc]
 set_property used_in_implementation false [get_files -all g:/ECE544/project_1/project_1.srcs/sources_1/bd/embsys/ip/embsys_microblaze_0_0/embsys_microblaze_0_0_ooc_debug.xdc]

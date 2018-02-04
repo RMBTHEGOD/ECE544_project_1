@@ -3,7 +3,7 @@
 	<name>n4fpga_sw_platform_0</name>
 	<comment></comment>
 	<projects>
-		<project>n4fpga_hw_platform_1</project>
+		<project>n4fpga_hw_platform_8</project>
 		<project>standalone_bsp_1</project>
 	</projects>
 	<buildSpec>

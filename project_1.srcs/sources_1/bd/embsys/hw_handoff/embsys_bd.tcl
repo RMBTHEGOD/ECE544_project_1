@@ -262,6 +262,10 @@ proc create_root_design { parentCell } {
   set btnL_0 [ create_bd_port -dir I btnL_0 ]
   set btnR_0 [ create_bd_port -dir I btnR_0 ]
   set btnU_0 [ create_bd_port -dir I btnU_0 ]
+  set colour_clock [ create_bd_port -dir O -type clk colour_clock ]
+  set_property -dict [ list \
+   CONFIG.FREQ_HZ {5468750} \
+ ] $colour_clock
   set dp_0 [ create_bd_port -dir O dp_0 ]
   set led_0 [ create_bd_port -dir O -from 15 -to 0 led_0 ]
   set pmodENC_A_0 [ create_bd_port -dir I pmodENC_A_0 ]
@@ -295,8 +299,8 @@ proc create_root_design { parentCell } {
   set_property -dict [ list \
    CONFIG.C_ALL_INPUTS {1} \
    CONFIG.C_ALL_INPUTS_2 {1} \
-   CONFIG.C_GPIO2_WIDTH {8} \
-   CONFIG.C_GPIO_WIDTH {8} \
+   CONFIG.C_GPIO2_WIDTH {32} \
+   CONFIG.C_GPIO_WIDTH {32} \
    CONFIG.C_IS_DUAL {1} \
  ] $axi_gpio_1
 
@@ -305,8 +309,8 @@ proc create_root_design { parentCell } {
   set_property -dict [ list \
    CONFIG.C_ALL_INPUTS {1} \
    CONFIG.C_ALL_INPUTS_2 {1} \
-   CONFIG.C_GPIO2_WIDTH {8} \
-   CONFIG.C_GPIO_WIDTH {8} \
+   CONFIG.C_GPIO2_WIDTH {32} \
+   CONFIG.C_GPIO_WIDTH {32} \
    CONFIG.C_IS_DUAL {1} \
  ] $axi_gpio_2
 
@@ -315,8 +319,8 @@ proc create_root_design { parentCell } {
   set_property -dict [ list \
    CONFIG.C_ALL_INPUTS {1} \
    CONFIG.C_ALL_INPUTS_2 {1} \
-   CONFIG.C_GPIO2_WIDTH {8} \
-   CONFIG.C_GPIO_WIDTH {8} \
+   CONFIG.C_GPIO2_WIDTH {32} \
+   CONFIG.C_GPIO_WIDTH {32} \
    CONFIG.C_IS_DUAL {1} \
  ] $axi_gpio_3
 
@@ -336,13 +340,21 @@ proc create_root_design { parentCell } {
   set clk_wiz_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:5.4 clk_wiz_1 ]
   set_property -dict [ list \
    CONFIG.CLKIN2_JITTER_PS {166.66} \
-   CONFIG.CLKOUT2_JITTER {130.958} \
-   CONFIG.CLKOUT2_PHASE_ERROR {98.575} \
+   CONFIG.CLKOUT1_JITTER {149.337} \
+   CONFIG.CLKOUT1_PHASE_ERROR {122.577} \
+   CONFIG.CLKOUT2_JITTER {149.337} \
+   CONFIG.CLKOUT2_PHASE_ERROR {122.577} \
    CONFIG.CLKOUT2_USED {true} \
+   CONFIG.CLKOUT3_JITTER {266.428} \
+   CONFIG.CLKOUT3_PHASE_ERROR {122.577} \
+   CONFIG.CLKOUT3_USED {true} \
+   CONFIG.MMCM_CLKFBOUT_MULT_F {7.000} \
    CONFIG.MMCM_CLKIN2_PERIOD {10.000} \
-   CONFIG.MMCM_CLKOUT1_DIVIDE {10} \
+   CONFIG.MMCM_CLKOUT0_DIVIDE_F {7.000} \
+   CONFIG.MMCM_CLKOUT1_DIVIDE {7} \
+   CONFIG.MMCM_CLKOUT2_DIVIDE {128} \
    CONFIG.MMCM_DIVCLK_DIVIDE {1} \
-   CONFIG.NUM_OUT_CLKS {2} \
+   CONFIG.NUM_OUT_CLKS {3} \
    CONFIG.PRIM_SOURCE {Single_ended_clock_capable_pin} \
    CONFIG.SECONDARY_SOURCE {Single_ended_clock_capable_pin} \
    CONFIG.USE_INCLK_SWITCHOVER {false} \
@@ -429,6 +441,7 @@ proc create_root_design { parentCell } {
   connect_bd_net -net btnU_0_1 [get_bd_ports btnU_0] [get_bd_pins nexys4IO_0/btnU]
   connect_bd_net -net clk_in1_0_1 [get_bd_ports sysclk] [get_bd_pins clk_wiz_1/clk_in1]
   connect_bd_net -net clk_wiz_1_clk_out2 [get_bd_pins PmodOLEDrgb_0/ext_spi_clk] [get_bd_pins clk_wiz_1/clk_out2]
+  connect_bd_net -net clk_wiz_1_clk_out3 [get_bd_ports colour_clock] [get_bd_pins clk_wiz_1/clk_out3]
   connect_bd_net -net clk_wiz_1_locked [get_bd_pins clk_wiz_1/locked] [get_bd_pins rst_clk_wiz_1_100M/dcm_locked]
   connect_bd_net -net ext_reset_in_0_1 [get_bd_ports sysreset_n] [get_bd_pins rst_clk_wiz_1_100M/ext_reset_in]
   connect_bd_net -net fit_timer_0_Interrupt [get_bd_pins fit_timer_0/Interrupt] [get_bd_pins microblaze_0_xlconcat/In0]
