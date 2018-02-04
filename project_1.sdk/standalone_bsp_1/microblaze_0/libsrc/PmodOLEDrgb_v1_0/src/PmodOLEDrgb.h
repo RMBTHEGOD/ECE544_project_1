@@ -189,6 +189,7 @@ typedef struct{
 	int	ychOledrgbMax;
 }PmodOLEDrgb;
 
+
 void OLEDrgb_begin(PmodOLEDrgb* InstancePtr, u32 GPIO_Address, u32 SPI_Address);
 void OLEDrgb_end(PmodOLEDrgb* InstancePtr);
 

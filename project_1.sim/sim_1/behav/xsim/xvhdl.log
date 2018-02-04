@@ -1,0 +1,51 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "G:/ECE544/project_1/project_1.ip_user_files/bd/embsys/ip/embsys_microblaze_0_0/sim/embsys_microblaze_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity embsys_microblaze_0_0
+INFO: [VRFC 10-163] Analyzing VHDL file "G:/ECE544/project_1/project_1.ip_user_files/bd/embsys/ip/embsys_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/sim/PmodOLEDrgb_axi_quad_spi_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PmodOLEDrgb_axi_quad_spi_0_0
+INFO: [VRFC 10-163] Analyzing VHDL file "G:/ECE544/project_1/project_1.ip_user_files/bd/embsys/ip/embsys_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/sim/PmodOLEDrgb_axi_gpio_0_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PmodOLEDrgb_axi_gpio_0_1
+INFO: [VRFC 10-163] Analyzing VHDL file "G:/ECE544/project_1/project_1.ip_user_files/bd/embsys/ip/embsys_axi_timer_0_0/sim/embsys_axi_timer_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity embsys_axi_timer_0_0
+INFO: [VRFC 10-163] Analyzing VHDL file "G:/ECE544/project_1/project_1.ip_user_files/bd/embsys/ip/embsys_fit_timer_0_0/sim/embsys_fit_timer_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity embsys_fit_timer_0_0
+INFO: [VRFC 10-163] Analyzing VHDL file "G:/ECE544/project_1/project_1.ip_user_files/bd/embsys/ip/embsys_axi_gpio_0_0/sim/embsys_axi_gpio_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity embsys_axi_gpio_0_0
+INFO: [VRFC 10-163] Analyzing VHDL file "G:/ECE544/project_1/project_1.ip_user_files/bd/embsys/ip/embsys_axi_uartlite_0_0/sim/embsys_axi_uartlite_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity embsys_axi_uartlite_0_0
+INFO: [VRFC 10-163] Analyzing VHDL file "G:/ECE544/project_1/project_1.ip_user_files/bd/embsys/ip/embsys_microblaze_0_axi_intc_0/sim/embsys_microblaze_0_axi_intc_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity embsys_microblaze_0_axi_intc_0
+INFO: [VRFC 10-163] Analyzing VHDL file "G:/ECE544/project_1/project_1.ip_user_files/bd/embsys/ip/embsys_mdm_1_0/sim/embsys_mdm_1_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity embsys_mdm_1_0
+INFO: [VRFC 10-163] Analyzing VHDL file "G:/ECE544/project_1/project_1.ip_user_files/bd/embsys/ip/embsys_rst_clk_wiz_1_100M_0/sim/embsys_rst_clk_wiz_1_100M_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity embsys_rst_clk_wiz_1_100M_0
+INFO: [VRFC 10-163] Analyzing VHDL file "G:/ECE544/project_1/project_1.ip_user_files/bd/embsys/ip/embsys_dlmb_v10_0/sim/embsys_dlmb_v10_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity embsys_dlmb_v10_0
+INFO: [VRFC 10-163] Analyzing VHDL file "G:/ECE544/project_1/project_1.ip_user_files/bd/embsys/ip/embsys_ilmb_v10_0/sim/embsys_ilmb_v10_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity embsys_ilmb_v10_0
+INFO: [VRFC 10-163] Analyzing VHDL file "G:/ECE544/project_1/project_1.ip_user_files/bd/embsys/ip/embsys_dlmb_bram_if_cntlr_0/sim/embsys_dlmb_bram_if_cntlr_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity embsys_dlmb_bram_if_cntlr_0
+INFO: [VRFC 10-163] Analyzing VHDL file "G:/ECE544/project_1/project_1.ip_user_files/bd/embsys/ip/embsys_ilmb_bram_if_cntlr_0/sim/embsys_ilmb_bram_if_cntlr_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity embsys_ilmb_bram_if_cntlr_0
+INFO: [VRFC 10-163] Analyzing VHDL file "G:/ECE544/project_1/project_1.ip_user_files/bd/embsys/sim/embsys.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity m00_couplers_imp_OEGTNN
+INFO: [VRFC 10-307] analyzing entity m01_couplers_imp_1X988FM
+INFO: [VRFC 10-307] analyzing entity m02_couplers_imp_1LSUSSG
+INFO: [VRFC 10-307] analyzing entity m03_couplers_imp_Z0V64X
+INFO: [VRFC 10-307] analyzing entity m04_couplers_imp_10K59R8
+INFO: [VRFC 10-307] analyzing entity m05_couplers_imp_CO79RP
+INFO: [VRFC 10-307] analyzing entity m06_couplers_imp_17TSQV
+INFO: [VRFC 10-307] analyzing entity m07_couplers_imp_1B6JKGM
+INFO: [VRFC 10-307] analyzing entity m08_couplers_imp_A8EFSC
+INFO: [VRFC 10-307] analyzing entity m09_couplers_imp_12FSMBH
+INFO: [VRFC 10-307] analyzing entity m10_couplers_imp_1LSYS80
+INFO: [VRFC 10-307] analyzing entity m11_couplers_imp_Z0XR01
+INFO: [VRFC 10-307] analyzing entity microblaze_0_local_memory_imp_1SR2TDT
+INFO: [VRFC 10-307] analyzing entity s00_couplers_imp_QRRRG2
+INFO: [VRFC 10-307] analyzing entity embsys_microblaze_0_axi_periph_0
+INFO: [VRFC 10-307] analyzing entity embsys
+INFO: [VRFC 10-163] Analyzing VHDL file "G:/ECE544/project_1/project_1.ip_user_files/bd/embsys/ip/embsys_axi_gpio_1_0/sim/embsys_axi_gpio_1_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity embsys_axi_gpio_1_0
+INFO: [VRFC 10-163] Analyzing VHDL file "G:/ECE544/project_1/project_1.ip_user_files/bd/embsys/ip/embsys_axi_gpio_2_0/sim/embsys_axi_gpio_2_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity embsys_axi_gpio_2_0
+INFO: [VRFC 10-163] Analyzing VHDL file "G:/ECE544/project_1/project_1.ip_user_files/bd/embsys/ip/embsys_axi_gpio_3_0/sim/embsys_axi_gpio_3_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity embsys_axi_gpio_3_0

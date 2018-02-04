@@ -1,7 +1,7 @@
 --Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2017.3 (win64) Build 2018833 Wed Oct  4 19:58:22 MDT 2017
---Date        : Wed Jan 24 20:46:33 2018
+--Date        : Tue Jan 30 10:58:25 2018
 --Host        : LAPTOP-C1T6PIG6 running 64-bit major release  (build 9200)
 --Command     : generate_target embsys_wrapper.bd
 --Design      : embsys_wrapper
@@ -33,15 +33,16 @@ entity embsys_wrapper is
     btnL_0 : in STD_LOGIC;
     btnR_0 : in STD_LOGIC;
     btnU_0 : in STD_LOGIC;
+    colour_clock : out STD_LOGIC;
     dp_0 : out STD_LOGIC;
     gpio_0_GPIO2_tri_o : out STD_LOGIC_VECTOR ( 7 downto 0 );
     gpio_0_GPIO_tri_i : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    gpio_0_blue_high_tri_i : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    gpio_0_blue_low_tri_i : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    gpio_0_green_high_tri_i : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    gpio_0_green_low_tri_i : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    gpio_0_red_high_tri_i : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    gpio_0_red_low_tri_i : in STD_LOGIC_VECTOR ( 7 downto 0 );
+    gpio_0_blue_high_tri_i : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    gpio_0_blue_low_tri_i : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    gpio_0_green_high_tri_i : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    gpio_0_green_low_tri_i : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    gpio_0_red_high_tri_i : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    gpio_0_red_low_tri_i : in STD_LOGIC_VECTOR ( 31 downto 0 );
     led_0 : out STD_LOGIC_VECTOR ( 15 downto 0 );
     pmodENC_A_0 : in STD_LOGIC;
     pmodENC_B_0 : in STD_LOGIC;
@@ -87,12 +88,12 @@ architecture STRUCTURE of embsys_wrapper is
     PmodOLEDrgb_out_0_pin3_t : out STD_LOGIC;
     PmodOLEDrgb_out_0_pin8_o : out STD_LOGIC;
     gpio_0_GPIO2_tri_o : out STD_LOGIC_VECTOR ( 7 downto 0 );
-    gpio_0_red_high_tri_i : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    gpio_0_red_low_tri_i : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    gpio_0_blue_high_tri_i : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    gpio_0_blue_low_tri_i : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    gpio_0_green_high_tri_i : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    gpio_0_green_low_tri_i : in STD_LOGIC_VECTOR ( 7 downto 0 );
+    gpio_0_red_high_tri_i : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    gpio_0_red_low_tri_i : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    gpio_0_blue_high_tri_i : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    gpio_0_blue_low_tri_i : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    gpio_0_green_high_tri_i : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    gpio_0_green_low_tri_i : in STD_LOGIC_VECTOR ( 31 downto 0 );
     sysclk : in STD_LOGIC;
     sysreset_n : in STD_LOGIC;
     btnU_0 : in STD_LOGIC;
@@ -114,7 +115,8 @@ architecture STRUCTURE of embsys_wrapper is
     pmodENC_sw_0 : in STD_LOGIC;
     pmodENC_btn_0 : in STD_LOGIC;
     pmodENC_B_0 : in STD_LOGIC;
-    pmodENC_A_0 : in STD_LOGIC
+    pmodENC_A_0 : in STD_LOGIC;
+    colour_clock : out STD_LOGIC
   );
   end component embsys;
   component IOBUF is
@@ -244,15 +246,16 @@ embsys_i: component embsys
       btnL_0 => btnL_0,
       btnR_0 => btnR_0,
       btnU_0 => btnU_0,
+      colour_clock => colour_clock,
       dp_0 => dp_0,
       gpio_0_GPIO2_tri_o(7 downto 0) => gpio_0_GPIO2_tri_o(7 downto 0),
       gpio_0_GPIO_tri_i(7 downto 0) => gpio_0_GPIO_tri_i(7 downto 0),
-      gpio_0_blue_high_tri_i(7 downto 0) => gpio_0_blue_high_tri_i(7 downto 0),
-      gpio_0_blue_low_tri_i(7 downto 0) => gpio_0_blue_low_tri_i(7 downto 0),
-      gpio_0_green_high_tri_i(7 downto 0) => gpio_0_green_high_tri_i(7 downto 0),
-      gpio_0_green_low_tri_i(7 downto 0) => gpio_0_green_low_tri_i(7 downto 0),
-      gpio_0_red_high_tri_i(7 downto 0) => gpio_0_red_high_tri_i(7 downto 0),
-      gpio_0_red_low_tri_i(7 downto 0) => gpio_0_red_low_tri_i(7 downto 0),
+      gpio_0_blue_high_tri_i(31 downto 0) => gpio_0_blue_high_tri_i(31 downto 0),
+      gpio_0_blue_low_tri_i(31 downto 0) => gpio_0_blue_low_tri_i(31 downto 0),
+      gpio_0_green_high_tri_i(31 downto 0) => gpio_0_green_high_tri_i(31 downto 0),
+      gpio_0_green_low_tri_i(31 downto 0) => gpio_0_green_low_tri_i(31 downto 0),
+      gpio_0_red_high_tri_i(31 downto 0) => gpio_0_red_high_tri_i(31 downto 0),
+      gpio_0_red_low_tri_i(31 downto 0) => gpio_0_red_low_tri_i(31 downto 0),
       led_0(15 downto 0) => led_0(15 downto 0),
       pmodENC_A_0 => pmodENC_A_0,
       pmodENC_B_0 => pmodENC_B_0,
